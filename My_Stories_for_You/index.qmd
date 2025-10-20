@@ -1,12 +1,42 @@
 # UTS-3 My Stories for You
 
-A story about my oldest daughter [Gaun Pemngantin Gladys](<https://azrl.wordpress.com/2020/07/18/gaun-pengantin-gladys/#comment-28004>)
+---
+title: "My Stories for You"
+format: html
+---
 
-A message to my daughter [The Child Who Learned to Walk at the Disneyland](<https://azrl.wordpress.com/2021/10/06/the-child-who-learned-to-walk-at-the-disneyland/>)
+# Tentang Gagal, dan Kenapa Aku Tidak Berhenti
 
-A story for my students [Fly Eagle Fly](<https://azrl.wordpress.com/2008/04/21/fly-my-eagle-fly/>)
+Semester pertama di ITB adalah masa paling melelahkan dalam hidupku.  
+Bukan karena tugas yang banyak, tapi karena aku terus membandingkan diri dengan orang lain.  
+Setiap kali melihat teman bisa menjelaskan konsep sulit dengan mudah, aku bertanya:  
+“Kenapa aku tidak seperti mereka?”
 
-A (true) story for my teachers [Sang Mahaguru, Sang Mahaputera](<https://azrl.wordpress.com/2012/11/28/perginya-sang-mahaputera-dan-mahaguru-berkemeja-putih/)
+Suatu malam, aku hampir menyerah.  
+Aku menatap layar yang penuh error merah—bukan hanya di terminal, tapi juga di pikiranku.  
+Aku merasa semua usahaku sia-sia.  
+Tapi saat itu, seseorang di lab berkata ringan, “Kalau gak error, gak belajar.”  
+Entah kenapa, kalimat sederhana itu menamparku dengan lembut.  
 
-Teasing story
-{{< video https://www.youtube.com/watch?v=Dg_4PbBlBf4 >}}
+Aku mulai melihat kegagalan bukan sebagai bukti ketidakmampuan, tapi bagian dari proses debug diri.  
+Aku belajar bahwa rasa tidak percaya diri bukan hal yang harus dilawan, tapi dipahami.  
+Karena dari sanalah kita tahu sisi mana yang perlu diperbaiki.
+
+Beberapa bulan kemudian, aku berhasil menyelesaikan proyek yang dulu kupikir mustahil.  
+Tidak spektakuler, tapi cukup untuk membuatku tersenyum.  
+Aku sadar, mungkin kemenanganku bukan di hasilnya, tapi di keberanianku untuk tetap mencoba walau takut.
+
+Sekarang, setiap kali aku menemui error baru—entah di kode atau di hidup—aku selalu ingat malam itu.  
+Aku tidak ingin sempurna, aku hanya ingin terus belajar.  
+
+---
+
+> Kadang, inspirasi tidak datang dari kemenangan besar.  
+> Ia muncul dari momen kecil ketika kamu memilih untuk tidak berhenti.
+
+---
+
+### Catatan Reflektif
+Cerita ini menggambarkan perjalanan pribadi menghadapi rasa gagal dan insecurity dalam lingkungan akademik yang kompetitif. Narasi membangun alur dari keputusasaan ke penerimaan diri, menunjukkan pertumbuhan emosional yang nyata.
+
+---
