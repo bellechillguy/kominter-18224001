@@ -1,0 +1,585 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={My Personal Review},
+  pdfauthor={131902360 Armein Z R Langi},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{My Personal Review}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Portfolio Asesmen II-2100 KIPP}
+\author{131902360 Armein Z R Langi}
+\date{2025-09-15}
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Selamat Berjumpa}\label{selamat-berjumpa}
+\addcontentsline{toc}{chapter}{Selamat Berjumpa}
+
+\markboth{Selamat Berjumpa}{Selamat Berjumpa}
+
+\begin{figure}[H]
+
+{\centering \includegraphics[width=9.5\linewidth,height=\textheight,keepaspectratio]{images/AZRL.png}
+
+}
+
+\caption{About Me}
+
+\end{figure}%
+
+Armein Z R Langi adalah Guru Besar di Sekolah Teknik Elektro dan
+Informatika ITB, dosen ITB sejak Desember 1987, mantan Rektor
+Universitas Kristen Maranatha, 1 Maret 2016 s/d 29 Februari 2020, mantan
+Kepala Pusat Penelitian Teknologi Informasi dan Komunikasi (PP-TIK) ITB
+November 2005 s/d Maret 2010, dan Sekretaris MWA ITB Mei 2010-Jan 2011.
+
+Lahir di Tomohon 1962 dari pasangan Manado dan Sunda. Saat ini tinggal
+di Bandung, menikah dengan Ina dan dikaruniai empat anak. Ayah dari
+Gladys, Kezia, Andria, dan Marco.
+
+Sharing pikiran singkat ada di blog \url{https://azrl.wordpress.com}.
+Facebookk: armein\_langi
+
+Andria, putri saya, lumayan sering membaca blog ini. Dia juga sumber
+inspirasi tulisan saya. Dia senang menceritakan jokes pada saya, dan
+kalau bagus saya tulis di sini, terutama seri Kocak Ala Andria. Dan dia
+suka heran, karena isinya sudah berbeda. Memang saya senang
+mengubah-ngubah cerita karena saya tidak suka menjiplak mentah-mentah.
+Minggu lalu tidak sengaja dia memuji tulisan blog ini.
+
+``Papa\ldots{} papa\ldots{} ``, tanyanya, ``Tulisan blog papa itu
+copy-paste dari tulisan orang ya\ldots?''
+
+Haa? Ya nggak mungkin lah. Kecuali lirik lagu, semua artikel di sini
+ditulis sendiri.
+
+``Ah bohong, soalnya tulisannya terlalu banyak\ldots.'' katanya tetap
+tidak percaya, ``Nggak mungkinlah papa tulis sendiri\ldots{}''
+
+Hehe, saya tersenyum sambil membelai Andria, karena buat saya itu adalah
+ultimate compliment. Thanks sweetheart\ldots{}
+
+Jadi kalau orang tidak percaya bahwa sesuatu itu karya anda, anda yang
+buat, jangan marah. Itu adalah pujian yang sejati.
+
+\bookmarksetup{startatroot}
+
+\chapter{UTS-1 All About Me}\label{uts-1-all-about-me}
+
+\bookmarksetup{startatroot}
+
+\chapter{Aku, di Antara Kode dan Kopi
+Pagi}\label{aku-di-antara-kode-dan-kopi-pagi}
+
+Hai, aku Nisrina Zakiyah. Orang-orang bilang aku pendiam, tapi pikiranku
+jarang berhenti bekerja. Aku suka membongkar sesuatu, mencari tahu
+bagaimana semuanya berjalan---entah itu baris kode, mesin kopi, atau
+bahkan cara orang berpikir.
+
+Aku mahasiswa Sistem dan Teknologi Informasi di ITB. Bagiku, teknologi
+bukan sekadar alat, tapi cara memahami manusia. Setiap sistem yang
+kubangun selalu kutanya: ``Apakah ini membantu orang menjadi lebih
+baik?''
+
+Pagi hari adalah waktu favoritku. Sambil menunggu air mendidih untuk
+kopi, aku biasanya menulis ide kecil di sticky note, kadang tentang
+proyek, kadang tentang hal aneh seperti ``bagaimana kalau AI bisa merasa
+bosan?''. Sebagian besar ide itu tidak pernah selesai, tapi setiap
+catatan kecil membuatku sadar: aku selalu ingin tahu.
+
+Aku sering terlihat serius, tapi sebenarnya aku mudah tertawa. Aku bisa
+ngakak sendiri saat kode jalan setelah 3 jam error karena titik koma
+hilang. Aku juga belajar, ternyata hidup kadang mirip debugging---kadang
+harus sabar cari kesalahan kecil sebelum semua berjalan baik.
+
+Yang membuatku terus maju bukan keinginan untuk jadi yang paling pintar,
+tapi untuk tetap berkembang meski lambat. Aku percaya keunikan bukan
+dari hasil besar, tapi dari keberanian untuk jujur pada diri sendiri.
+
+Jadi, kalau kamu bertanya siapa aku: aku adalah kombinasi antara rasa
+ingin tahu yang tidak pernah selesai, tawa kecil di tengah error, dan
+secangkir kopi pagi yang selalu mengawali hari dengan semangat baru.
+
+\bookmarksetup{startatroot}
+
+\chapter{UTS-2 My Songs for You}\label{uts-2-my-songs-for-you}
+
+\bookmarksetup{startatroot}
+
+\chapter{Lagu Kecil untuk Kamu yang Sedang
+Berjuang}\label{lagu-kecil-untuk-kamu-yang-sedang-berjuang}
+
+\textbf{Verse 1}\\
+Pernahkah kamu merasa dunia bergerak terlalu cepat,\\
+sementara langkahmu masih tertinggal di belakang?\\
+Aku tahu rasanya, karena aku juga pernah di sana ---\\
+di antara rencana yang gagal dan kopi yang sudah dingin.
+
+\textbf{Chorus}\\
+Tapi dengar, kamu tidak sendirian.\\
+Setiap orang punya ritmenya sendiri.\\
+Kadang lagu hidup terdengar fals,\\
+tapi itu justru yang membuatnya nyata.
+
+\textbf{Verse 2}\\
+Aku menulis lagu ini bukan dengan nada,\\
+tapi dengan napas panjang dan tawa yang kaku.\\
+Karena aku percaya, perjuangan yang hening pun pantas dirayakan.\\
+Kita tidak perlu panggung besar,\\
+cukup hati yang mau mendengarkan diri sendiri.
+
+\textbf{Bridge}\\
+Kalau hidup terasa berat,\\
+ingat: bahkan gitar butuh disetem ulang untuk bisa berbunyi indah lagi.
+
+\textbf{Final Chorus}\\
+Jadi teruslah mainkan lagu itu,\\
+meski jari terasa pegal,\\
+meski suara serak,\\
+karena satu hari nanti,\\
+melodi kecilmu akan terdengar oleh dunia.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+Lagu ini bukan hanya untuk orang lain.\\
+Ini juga untuk aku,\\
+yang belajar bahwa keberanian paling sederhana\\
+adalah tetap bernyanyi meski sedang takut.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Catatan Reflektif}\label{catatan-reflektif}
+
+Lagu ini menggambarkan perjalanan mental saat seseorang menghadapi
+tekanan belajar, rasa gagal, dan kelelahan, namun tetap mencoba bangkit
+dengan cara sederhana. Gaya penulisannya bebas dan naratif agar pembaca
+bisa ``mendengar'' pesannya meski tanpa nada.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\bookmarksetup{startatroot}
+
+\chapter{UTS-3 My Stories for You}\label{uts-3-my-stories-for-you}
+
+\bookmarksetup{startatroot}
+
+\chapter{Tentang Gagal, dan Kenapa Aku Tidak
+Berhenti}\label{tentang-gagal-dan-kenapa-aku-tidak-berhenti}
+
+Semester pertama di ITB adalah masa paling melelahkan dalam hidupku.\\
+Bukan karena tugas yang banyak, tapi karena aku terus membandingkan diri
+dengan orang lain.\\
+Setiap kali melihat teman bisa menjelaskan konsep sulit dengan mudah,
+aku bertanya:\\
+``Kenapa aku tidak seperti mereka?''
+
+Suatu malam, aku hampir menyerah.\\
+Aku menatap layar yang penuh error merah---bukan hanya di terminal, tapi
+juga di pikiranku.\\
+Aku merasa semua usahaku sia-sia.\\
+Tapi saat itu, seseorang di lab berkata ringan, ``Kalau gak error, gak
+belajar.''\\
+Entah kenapa, kalimat sederhana itu menamparku dengan lembut.
+
+Aku mulai melihat kegagalan bukan sebagai bukti ketidakmampuan, tapi
+bagian dari proses debug diri.\\
+Aku belajar bahwa rasa tidak percaya diri bukan hal yang harus dilawan,
+tapi dipahami.\\
+Karena dari sanalah kita tahu sisi mana yang perlu diperbaiki.
+
+Beberapa bulan kemudian, aku berhasil menyelesaikan proyek yang dulu
+kupikir mustahil.\\
+Tidak spektakuler, tapi cukup untuk membuatku tersenyum.\\
+Aku sadar, mungkin kemenanganku bukan di hasilnya, tapi di keberanianku
+untuk tetap mencoba walau takut.
+
+Sekarang, setiap kali aku menemui error baru---entah di kode atau di
+hidup---aku selalu ingat malam itu.\\
+Aku tidak ingin sempurna, aku hanya ingin terus belajar.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+Kadang, inspirasi tidak datang dari kemenangan besar.\\
+Ia muncul dari momen kecil ketika kamu memilih untuk tidak berhenti.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Catatan Reflektif}\label{catatan-reflektif-1}
+
+Cerita ini menggambarkan perjalanan pribadi menghadapi rasa gagal dan
+insecurity dalam lingkungan akademik yang kompetitif. Narasi membangun
+alur dari keputusasaan ke penerimaan diri, menunjukkan pertumbuhan
+emosional yang nyata.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\bookmarksetup{startatroot}
+
+\chapter{UTS-4 My SHAPE (Spiritual Gifts, Heart, Abilities, Personality,
+Experiences)}\label{uts-4-my-shape-spiritual-gifts-heart-abilities-personality-experiences}
+
+\bookmarksetup{startatroot}
+
+\chapter{Bentukku: Antara Logika dan
+Empati}\label{bentukku-antara-logika-dan-empati}
+
+Ketika mengisi lembar kerja tentang ``siapa dirimu'', aku tidak
+menyangka jawabannya akan serumit ini.\\
+Ternyata, aku bukan hanya seseorang yang berpikir logis, tapi juga
+seseorang yang mudah merasakan suasana hati orang lain.\\
+Aku menyadari bahwa dua hal itu --- logika dan empati --- adalah bentuk
+utamaku.
+
+Di satu sisi, aku suka struktur, data, dan sistem yang rapi.\\
+Aku bisa betah berjam-jam di depan laptop, mencoba memahami kenapa
+sebuah algoritma tidak berjalan sesuai rencana.\\
+Tapi di sisi lain, aku selalu berhenti sejenak saat melihat teman
+kelelahan atau diam terlalu lama.\\
+Aku ingin tahu apakah mereka baik-baik saja.\\
+Dari situ aku sadar, mungkin bentukku bukan sekadar ``problem solver'',
+tapi ``listener'' juga.
+
+Dulu aku menganggap perasaan membuatku lemah.\\
+Aku kira untuk jadi ``teknolog yang hebat'', aku harus rasional
+sepenuhnya.\\
+Namun, semakin lama aku belajar, semakin aku sadar: logika tanpa empati
+hanyalah kode tanpa konteks.\\
+Empati membuat teknologi punya arah.
+
+Sekarang, setiap kali aku membuat sesuatu --- baik kode, desain sistem,
+atau tulisan --- aku selalu bertanya,\\
+``Apakah ini hanya efisien, atau juga manusiawi?''\\
+Karena aku ingin hasil kerjaku tidak hanya berjalan dengan baik, tapi
+juga \emph{bermakna bagi orang lain.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+Bentukku tidak harus sempurna.\\
+Yang penting, ia terus berkembang --- mengikuti arah yang membuatku
+lebih peka dan lebih bijak.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Catatan Reflektif}\label{catatan-reflektif-2}
+
+Tulisan ini menggambarkan pemahaman diri yang seimbang antara kekuatan
+analitis dan sisi empatik. Narasi memperlihatkan proses introspeksi dan
+kesadaran akan pentingnya keseimbangan nilai dalam pengembangan diri.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\bookmarksetup{startatroot}
+
+\chapter{UTS-5 My Personal Reviews}\label{uts-5-my-personal-reviews}
+
+\bookmarksetup{startatroot}
+
+\chapter{Menemukan Diri Lewat
+Komunikasi}\label{menemukan-diri-lewat-komunikasi}
+
+Dalam perkuliahan Komunikasi Interpersonal dan Profesional, aku belajar
+bahwa komunikasi bukan hanya tentang berbicara, tapi tentang membangun
+pemahaman bersama.\\
+Sebelumnya aku mengira ``komunikasi yang baik'' berarti mampu
+menjelaskan ide dengan jelas. Sekarang aku tahu, itu juga berarti mampu
+\emph{mendengarkan} dengan tulus.
+
+Melalui tugas-tugas sebelumnya, aku melihat pola pada diriku sendiri:
+aku cenderung fokus pada akurasi pesan, tapi kadang lupa memerhatikan
+perasaan orang lain.\\
+Di sinilah aku mulai belajar tentang keseimbangan antara \emph{logos}
+dan \emph{pathos} --- antara rasionalitas dan empati.
+
+Ketika seseorang menyampaikan pendapat berbeda, refleks awalku adalah
+menjawab dengan argumen. Tapi aku sadar, kadang orang tidak butuh
+disanggah, hanya butuh dimengerti.\\
+Dari sini, aku mulai memperbaiki cara berkomunikasi: bukan untuk menang,
+tapi untuk terhubung.
+
+Aku juga menyadari bahwa komunikasi interpersonal tidak bisa dipisahkan
+dari etika.\\
+Etos komunikasi muncul ketika seseorang berbicara dengan integritas.\\
+Bukan sekadar menyampaikan pesan, tapi juga menghargai lawan bicara.\\
+Karena itu, aku berusaha lebih hati-hati memilih kata, terutama dalam
+situasi yang emosional atau sensitif.
+
+Dari seluruh proses ini, aku menyimpulkan bahwa komunikasi yang efektif
+selalu berawal dari kesadaran diri.\\
+Saat aku memahami perasaanku sendiri, aku bisa lebih mudah memahami
+orang lain.\\
+Dan ketika aku mendengarkan dengan empati, aku tidak hanya mendengar
+suara --- aku memahami makna.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Rekomendasi Pribadi}\label{rekomendasi-pribadi}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Untuk diri sendiri:} Latih keberanian berbicara tanpa
+  kehilangan kelembutan dalam penyampaian.\\
+\item
+  \textbf{Untuk lingkungan belajar:} Ciptakan ruang diskusi yang aman,
+  di mana setiap orang merasa didengar tanpa takut salah.\\
+\item
+  \textbf{Untuk komunikasi profesional:} Gunakan empati sebagai dasar
+  dalam setiap presentasi atau interaksi kerja --- karena ide hebat
+  hanya berarti bila orang lain merasa dihargai.
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+Komunikasi terbaik bukan tentang siapa yang paling fasih, tapi siapa
+yang paling tulus dalam memahami.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\bookmarksetup{startatroot}
+
+\chapter{UAS-1 My Concepts}\label{uas-1-my-concepts}
+
+Mau hidup epik ? \href{lifestory.pdf}{Write your Life Story}
+
+Apa itu berkonsep?
+
+\url{https://youtu.be/QVfUlVBO80U?si=yM6q_rwV9rcDBbu7}
+
+\bookmarksetup{startatroot}
+
+\chapter{UAS-3 My Opinions}\label{uas-3-my-opinions}
+
+SApa itu beropini? \href{BM\%20Opini.mp4}{Opini Berpengaruh}
+
+Bagiamana menjaadi menarik? \href{./Interesting.mp4}{Menjadi Menarik}
+
+\bookmarksetup{startatroot}
+
+\chapter{UAS-3 My Innovations}\label{uas-3-my-innovations}
+
+\bookmarksetup{startatroot}
+
+\chapter{UAS-4 My Knowledge}\label{uas-4-my-knowledge}
+
+Cara saya mengkomunikasikan sebuah pengatahuan sebagai petunjuk bagi
+orang lain 1) saya tulis
+\href{Rekomendasi\%20Presentasi\%20Efektif(Contoh\%20Makalah).pdf}{makalah
+sebagai bahan utama} 2) lalu saya buat
+\href{Contoh\%20Transkrip\%20Presentasi.pdf}{transkrip ucapan lisan} 3)
+kemudian saya kembangkan
+\href{Rekomendasi\%20Presentasi\%20(Contoh\%20Slides).pdf}{slide
+pendukung trnsskrip} 4) lalu saya memproduksivideo audio visual
+\url{https://youtu.be/ZbghfMvnPZc} \url{https://youtu.be/ZbghfMvnPZc}
+
+\bookmarksetup{startatroot}
+
+\chapter{UAS-5 My Professional
+Reviews}\label{uas-5-my-professional-reviews}
+
+Untuk melAkukan review, seperti pada
+\href{../My_Personal_Reviews/Doc.5.Mengevaluasi-Esai-Berdasarkan-Rubrik.pdf}{pendekatan
+AI}, kita membutuhkan rubrik
+
+\bookmarksetup{startatroot}
+
+\chapter{Summary}\label{summary}
+
+In summary, this book has no content whatsoever.
+
+\bookmarksetup{startatroot}
+
+\chapter*{References}\label{references}
+\addcontentsline{toc}{chapter}{References}
+
+\markboth{References}{References}
+
+\phantomsection\label{refs}
+
+
+
+
+\end{document}
