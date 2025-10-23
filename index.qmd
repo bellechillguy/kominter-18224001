@@ -1,22 +1,19 @@
-# Selamat Berjumpa {.unnumbered}
+# UTS-1 All About Me
 
-![About Me](images/AZRL.png){width=950%}
-
-Armein Z R Langi adalah Guru Besar di Sekolah Teknik Elektro dan Informatika ITB, dosen ITB sejak Desember 1987, mantan Rektor Universitas Kristen Maranatha, 1 Maret 2016 s/d 29 Februari 2020, mantan Kepala Pusat Penelitian Teknologi Informasi dan Komunikasi (PP-TIK) ITB November 2005 s/d Maret 2010, dan Sekretaris MWA ITB Mei 2010-Jan 2011.
-
-Lahir di Tomohon 1962 dari pasangan Manado dan Sunda. Saat ini tinggal di Bandung, menikah dengan Ina dan dikaruniai empat anak. Ayah dari Gladys, Kezia, Andria, dan Marco.
-
-Sharing pikiran singkat ada di blog <https://azrl.wordpress.com>. Facebookk: armein_langi
-
-Andria, putri saya, lumayan sering membaca blog ini.  Dia juga sumber inspirasi tulisan saya.  Dia senang menceritakan jokes pada saya, dan kalau bagus saya tulis di sini, terutama seri Kocak Ala Andria.  Dan dia suka heran, karena isinya sudah berbeda.  Memang saya senang mengubah-ngubah cerita karena saya tidak suka menjiplak mentah-mentah.  Minggu lalu tidak sengaja dia memuji tulisan blog ini.
+---
+title: "Stay Sane!"
+format: html
+---
 
 
-“Papa… papa… “, tanyanya, “Tulisan blog papa itu copy-paste dari tulisan orang ya…?”
+Hai, aku Nisrina Zakiyah. Orang-orang bilang aku pendiam, tapi pikiranku jarang berhenti bekerja. Aku suka membongkar sesuatu, mencari tahu bagaimana semuanya berjalan—entah itu baris kode, mesin kopi, atau bahkan cara orang berpikir.
 
-Haa? Ya nggak mungkin lah.  Kecuali lirik lagu, semua artikel di sini ditulis sendiri.
+Aku mahasiswa Sistem dan Teknologi Informasi di ITB. Bagiku, teknologi bukan sekadar alat, tapi cara memahami manusia. Setiap sistem yang kubangun selalu kutanya: “Apakah ini membantu orang menjadi lebih baik?”
 
-“Ah bohong, soalnya tulisannya terlalu banyak….” katanya tetap tidak percaya, “Nggak mungkinlah papa tulis sendiri…”
+Pagi hari adalah waktu favoritku. Sambil menunggu air mendidih untuk kopi, aku biasanya menulis ide kecil di sticky note, kadang tentang proyek, kadang tentang hal aneh seperti “bagaimana kalau AI bisa merasa bosan?”. Sebagian besar ide itu tidak pernah selesai, tapi setiap catatan kecil membuatku sadar: aku selalu ingin tahu.
 
-Hehe, saya tersenyum sambil membelai Andria, karena buat saya itu adalah ultimate compliment.  Thanks sweetheart…
+Aku sering terlihat serius, tapi sebenarnya aku mudah tertawa. Aku bisa ngakak sendiri saat kode jalan setelah 3 jam error karena titik koma hilang. Aku juga belajar, ternyata hidup kadang mirip debugging—kadang harus sabar cari kesalahan kecil sebelum semua berjalan baik.
 
-Jadi kalau orang tidak percaya bahwa sesuatu itu karya anda, anda yang buat, jangan marah.  Itu adalah pujian yang sejati.
+Yang membuatku terus maju bukan keinginan untuk jadi yang paling pintar, tapi untuk tetap berkembang meski lambat. Aku percaya keunikan bukan dari hasil besar, tapi dari keberanian untuk jujur pada diri sendiri.
+
+Jadi, kalau kamu bertanya siapa aku: aku adalah kombinasi antara rasa ingin tahu yang tidak pernah selesai, tawa kecil di tengah error, dan secangkir kopi pagi yang selalu mengawali hari dengan semangat baru.
