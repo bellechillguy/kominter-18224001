@@ -1,2 +1,19 @@
 ## UAS-5 My Professional Reviews
-Untuk melAkukan review, seperti pada [pendekatan AI](../My_Personal_Reviews/Doc.5.Mengevaluasi-Esai-Berdasarkan-Rubrik.pdf), kita membutuhkan rubrik
+
+Judul: Mekanisme Kebijakan Berbasis Skor Risiko Emisi Karbon Perkotaan di Kota Bandung
+Inovasi yang saya ajukan bukan berupa sistem teknologi baru, melainkan mekanisme kebijakan yang memanfaatkan sistem informasi yang sudah ada. Fokus inovasi ini adalah mengubah cara pemerintah kota menggunakan data emisi karbon. Selama ini data lingkungan, lalu lintas, dan energi sudah tersedia, tetapi jarang digabungkan menjadi dasar kebijakan yang jelas dan terukur. Akibatnya, keputusan sering diambil tanpa prioritas wilayah dan waktu yang tepat.
+Inovasi ini mengusulkan mekanisme pengambilan kebijakan berbasis skor risiko emisi karbon per wilayah di Kota Bandung. Skor ini dihasilkan dari penggabungan data yang sudah ada, seperti kualitas udara, kepadatan lalu lintas, konsumsi energi bangunan, dan kondisi cuaca. Tidak ada data baru yang diciptakan. Kebaruannya terletak pada cara data tersebut disatukan dan diterjemahkan menjadi satu indikator yang mudah dipahami oleh pembuat kebijakan.
+Skor risiko emisi berfungsi sebagai ringkasan kondisi lingkungan suatu wilayah. Semakin tinggi skor, semakin besar potensi lonjakan emisi karbon di wilayah tersebut. Dengan satu angka yang jelas, pemerintah kota dapat dengan cepat menentukan wilayah mana yang perlu diprioritaskan untuk intervensi. Mekanisme ini mengurangi ketergantungan pada laporan panjang dan analisis terpisah yang sering memperlambat pengambilan keputusan.
+Pemerintah kota berperan sebagai aktor utama dalam inovasi ini. Skor risiko emisi digunakan langsung dalam proses perumusan kebijakan, seperti pengaturan lalu lintas, penentuan zona rendah emisi, atau prioritas penghematan energi di gedung publik. Dinas lingkungan hidup serta dinas transportasi dan energi berperan sebagai aktor pendukung yang menyediakan dan memvalidasi data. Dengan pembagian peran ini, inovasi tetap realistis dan sesuai dengan struktur pemerintahan yang ada.
+Nilai inovatif dari mekanisme ini terletak pada pergeseran cara berpikir kebijakan. Keputusan tidak lagi berbasis asumsi atau tekanan situasional, tetapi berbasis indikator risiko yang terukur dan konsisten. Skor risiko emisi juga memungkinkan evaluasi kebijakan secara berkala. Jika skor suatu wilayah menurun setelah intervensi, kebijakan dapat dinilai efektif. Jika tidak, pendekatan dapat segera disesuaikan.
+Inovasi ini dirancang untuk diterapkan pada skala satu kota, yaitu Kota Bandung, agar tetap kontekstual dan realistis. Bandung memiliki kompleksitas lalu lintas, kepadatan penduduk, dan aktivitas ekonomi yang tinggi, sehingga cocok menjadi lokasi penerapan awal mekanisme kebijakan berbasis data ini. Pendekatan skala kota juga memudahkan koordinasi antar instansi.
+Saya tidak mengklaim bahwa inovasi ini siap langsung diterapkan tanpa persiapan. Keberhasilannya sangat bergantung pada konsistensi data dan komitmen pemerintah kota dalam menggunakan skor risiko sebagai dasar kebijakan. Namun, sebagai mekanisme kebijakan berbasis sistem informasi, inovasi ini menunjukkan bagaimana teknologi yang sudah ada dapat digunakan secara lebih bermakna untuk menjawab masalah emisi karbon perkotaan.
+Dengan pendekatan ini, artificial intelligence dan sistem informasi tidak lagi berdiri sebagai proyek teknologi, tetapi menjadi bagian dari proses kebijakan publik yang konkret dan berdampak langsung bagi masyarakat.
+
+Referensi
+World Economic Forum. Data Driven Cities for Climate Action.
+https://www.weforum.org
+International Energy Agency. Digitalization and Energy Policy.
+https://www.iea.org
+United Nations Environment Programme. Using Data to Drive Climate Policy.
+https://www.unep.org
